@@ -1,0 +1,456 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+a,
+li {
+    text-decoration: none;
+    list-style: none;
+}
+.navbar{
+    z-index: 1000;
+}
+.navbar ul{
+    list-style: none;
+    background-color: #11111165;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+li a:hover{
+    color:rgb(0, 255, 221);
+    text-shadow: 0 0 120px rgb(0, 255, 221);
+}
+.navbar li{
+    float: right;
+}
+
+
+
+nav .logo {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    float: left;
+}
+.destaque {
+    color:rgb(0, 255, 221);
+}
+
+
+.Titulo{
+    font-family: "Open Sans", sans-serif;
+    z-index: 1000;
+    font-size: 100px;
+    color: #fff;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-weight: 100;
+}
+.Titulo2{
+    font-family: "Open Sans", sans-serif;
+    z-index: 1000;
+    margin: 0;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    font-size: 30px;
+    color: #8d8d8d;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-weight: 100;
+}
+.Titulo span{
+    font-size: 30px;
+    color: #8d8d8d;
+}
+section{
+    
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #111111;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+section .row{
+    position: relative;
+    top: -50%;
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    white-space: nowrap;
+    font-size: 70px;
+    transform: rotate(-30deg);
+}
+
+.fa-brands{
+    color: rgba(0,0,0,0.5);
+    transition: 0.9s;
+    padding: 0 5px;
+    user-select: none;
+    cursor: default;
+}
+
+i:hover{
+    color:rgb(0, 255, 221);
+    text-shadow: 0 0 120px rgb(0, 255, 221);
+}
+
+
+section .row div {
+    animation: animate1 80s linear infinite;
+    animation-delay:-80s ;
+}
+section .row div:nth-child(2){
+    animation: animate2 80s linear infinite;
+    animation-delay:-40s ;
+}
+@keyframes animate1{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes animate2{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}
+
+
+
+section .row:nth-child(even) div {
+    animation: animate3 80s linear infinite;
+    animation-delay:-80s ;
+}
+section .row:nth-child(even) div:nth-child(2){
+    animation: animate4 80s linear infinite;
+    animation-delay:-40s ;
+}
+@keyframes animate3{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+@keyframes animate4{
+    0%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+
+.redes-social i{
+    color: #e4405f;
+}
+    .redes-sociais {
+        z-index: 200;
+        position: absolute;
+        top: 85%;
+        left:45%;
+        margin-right: -50%;
+        bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.2rem;
+    }
+    
+    .redes-sociais a {
+        transition: all 0.2s ease-in;
+        font-size: 2rem;
+        color:rgb(0, 255, 221);
+        transform: translateY(0);
+    }
+    #be{
+        color:rgb(0, 255, 221);
+    }
+    
+    .redes-sociais a:hover {
+        transform: translateY(-5px);
+    }
+    
+    .redes-sociais a:hover .fa-github {
+        color: #454545;
+    }
+    
+    .redes-sociais a:hover .fa-linkedin {
+        color: #0e76a8;
+    }
+    
+    #be:hover{
+        color: #0030cf;
+    }
+    
+    .redes-sociais a:hover .fa-instagram {
+        color: #e4405f;
+    }
+
+
+/*Tamanho para tablets até o inicio de monitores*/
+
+@media (min-width: 700px) and (max-width: 1024px){
+
+    .Titulo{
+        font-size:50px;
+    }
+    
+    .Titulo2{
+        font-size:25px;
+        top: 57%;
+    }
+    .redes-social i{
+        color: #e4405f;
+    }
+        .redes-sociais {
+            z-index: 200;
+            position: absolute;
+            top: 30%;
+            left:39%;
+            margin-right: -50%;
+            bottom: 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1.2rem;
+        }
+        
+        .redes-sociais a {
+            transition: all 0.2s ease-in;
+            font-size: 2rem;
+            color:rgb(0, 255, 221);
+            transform: translateY(0);
+        }
+        
+        .redes-sociais a:hover {
+            transform: translateY(-5px);
+        }
+        
+        .redes-sociais a:hover .fa-github {
+            color: #454545;
+        }
+        
+        .redes-sociais a:hover .fa-linkedin {
+            color: #0e76a8;
+        }
+        
+        .redes-sociais a:hover .fa-tiktok {
+            color: #353535;
+        }
+        
+        .redes-sociais a:hover .fa-instagram {
+            color: #e4405f;
+        }
+    }
+
+
+/*Tamanho para celulares até o inicio de tablets*/
+
+@media (min-width: 420px) and (max-width: 699px){
+/*estilização menu*/
+
+.navbar{
+    font-family: "Open Sans", sans-serif;
+    z-index: 100;
+}
+
+.navbar ul{
+    list-style: none;
+    background-color: #111111b7;
+    padding: 0px;
+    margin: 0px;
+}
+.navbar li{
+    display: none;
+
+}
+
+/*LOGO*/
+nav .logo a{
+    color: #fff;
+    padding: 1rem;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    float: left;
+}
+.destaque {
+    color:rgb(0, 255, 221);
+}
+    
+
+/* Efeitos de menu*/
+
+.hamburguer{
+    /*background-color: red;*/
+    height: 2rem;
+    width: 2rem;
+    position: fixed;
+    z-index:100;
+    right: 1rem;
+    top: .7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    z-index: 160;
+}
+
+.line{
+    background-color: white;
+    width: 100%;
+    height:.1rem;
+    box-shadow: 0.1rem 0.1rem 1px #000;
+    transition:transform 1s;
+
+}
+
+/*Efeito s que aconteceraão depois que clicar no menu */
+
+.show-menu .hamburguer {
+    right: 2rem;
+}
+
+.show-menu .navbar{
+    background-color: #313131;
+}
+.show-menu ul{
+    height: 100vh;
+    color: #fff;
+
+}
+.show-menu .navbar li {
+    text-decoration: none;
+    padding: auto;
+    padding-bottom: 30px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.show-menu .links{
+    
+    color: #ffffff;
+    font-size: 2rem;
+
+}
+.show-menu .links:hover{
+    color:rgb(0, 255, 221);
+
+}
+.show-menu nav .logo{
+    display: none;
+}
+
+
+/*Transformação do hamburguer em X para sinalizar botão de fechamento*/
+
+.show-menu #line1 {
+    transform: translate(.28rem, .39em) rotate(45deg);
+}
+  .show-menu #line2 {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .show-menu #line3 {
+    transform: translate(.17rem, -.6rem) rotate(-45deg);
+}
+
+
+
+
+
+
+.Titulo{
+        font-size:30px;
+        width: 90%;
+        font-size: 4rem;
+        line-height: 6rem;
+        z-index: 90;
+        text-align: center;
+}
+
+.Titulo2{
+    font-size:30px;
+    top: 65%;
+    width: 90%;
+    z-index: 90;
+    text-align: center;
+}
+
+.redes-social i{
+    color: #e4405f;
+}
+
+    .redes-sociais {
+        z-index: 90;
+        position: absolute;
+        top: 45%;
+        left:30%;
+        margin-right: -50%;
+        bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.2rem;
+    }
+    
+    .redes-sociais a {
+        transition: all 0.2s ease-in;
+        font-size: 2rem;
+        color:rgb(0, 255, 221);
+        transform: translateY(0);
+    }
+    
+    .redes-sociais a:hover {
+        transform: translateY(-5px);
+    }
+    
+    .redes-sociais a:hover .fa-github {
+        color: #454545;
+    }
+    
+    .redes-sociais a:hover .fa-linkedin {
+        color: #0e76a8;
+    }
+    
+    .redes-sociais a:hover .fa-tiktok {
+        color: #353535;
+    }
+    
+    .redes-sociais a:hover .fa-instagram {
+        color: #e4405f;
+    }
+}
+
