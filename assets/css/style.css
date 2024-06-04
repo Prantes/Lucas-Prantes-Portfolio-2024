@@ -45,12 +45,12 @@ nav .logo {
     font-weight: bold;
     float: left;
 }
-.destaque {
+.LOGO {
     color:rgb(0, 255, 221);
 }
 
 
-.Titulo{
+.titulo{
     font-family: "Open Sans", sans-serif;
     z-index: 1000;
     font-size: 100px;
@@ -63,7 +63,7 @@ nav .logo {
     transform: translate(-50%, -50%);
     font-weight: 100;
 }
-.Titulo2{
+.titulo2{
     font-family: "Open Sans", sans-serif;
     z-index: 1000;
     margin: 0;
@@ -76,11 +76,11 @@ nav .logo {
     transform: translate(-50%, -50%);
     font-weight: 100;
 }
-.Titulo span{
+.titulo span{
     font-size: 30px;
     color: #8d8d8d;
 }
-section{
+.container-home{
     
     position: relative;
     width: 100%;
@@ -90,7 +90,9 @@ section{
     flex-direction: column;
     overflow: hidden;
 }
-section .row{
+
+
+.container-home .row{
     position: relative;
     top: -50%;
     width: 100%;
@@ -109,7 +111,7 @@ section .row{
     cursor: default;
 }
 
-i:hover{
+.sha:hover{
     color:rgb(0, 255, 221);
     text-shadow: 0 0 120px rgb(0, 255, 221);
 }
@@ -167,65 +169,210 @@ section .row:nth-child(even) div:nth-child(2){
     }
 }
 
-
-
-.redes-social i{
+.redes-sociais {
+    z-index: 200;
+    position: absolute;
+    top: 85%;
+    left:45%;
+    margin-right: -50%;
+    bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.2rem;
+}
+    
+.redes-sociais a {
+    transition: all 0.2s ease-in;
+    font-size: 2rem;
+    color:rgb(0, 255, 221);
+    transform: translateY(0);
+}
+#be{
+    color:rgb(0, 255, 221);
+}
+    
+.redes-sociais a:hover {
+    transform: translateY(-5px);
+}
+    
+.redes-sociais a:hover .fa-github {
+    color: #454545;
+}
+    
+.redes-sociais a:hover .fa-linkedin {
+    color: #0e76a8;
+}
+    
+#be:hover{
+    color: #0030cf;
+}
+    
+.redes-sociais a:hover .fa-instagram {
     color: #e4405f;
 }
-    .redes-sociais {
-        z-index: 200;
-        position: absolute;
-        top: 85%;
-        left:45%;
-        margin-right: -50%;
-        bottom: 1rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1.2rem;
-    }
+
+    /*Estilização Página Sobre*/
+
+.container-sobre{
     
-    .redes-sociais a {
-        transition: all 0.2s ease-in;
-        font-size: 2rem;
-        color:rgb(0, 255, 221);
-        transform: translateY(0);
-    }
-    #be{
-        color:rgb(0, 255, 221);
-    }
+    position: relative;
+    width: 100%;
+    background: #111111;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.titulo-sobre{
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+.titulo-sobre span{
+    color: rgb(0, 255, 221);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.titulo-sobre h1{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.sobre-content{
+    margin: 30px;
+    height: 75vh;
+}
+
+.sobre-text{
+    float: right;
+    width: 50%;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+.sobre-text h1{
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+
+}
+.sobre-text p{
+    text-align:justify;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+
+.sobre-img{
+    border-radius: 50%;
+    margin-top: 30px;
+    float: left;
+    width: 25%;
+    margin-left:10%;
+    box-shadow: 0 0 120px rgba(0, 255, 221, 0.527);
+}
+
+.sobre-social{
+    padding-top: 15px;
+}
+
+.sobre-social i{
+    margin-top: 5px;
+    color: #fff;
+    font-size: 1.5rem;
+    padding-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    align-items: center;
+}
+
+.sobre-content .sobre-social .fa-brands .fa-behance .b{
+    color: #fff;
+}
+
+.sobre-social i{
+    transition: all 0.2s ease-in;
+    font-size: 2rem;
+    transform: translateY(0);
+}
+
+.sobre-social i:hover {
+    transform: translateY(-5px);
+}
     
-    .redes-sociais a:hover {
-        transform: translateY(-5px);
-    }
+.sobre-social a:hover .fa-github {
+    color: #454545;
+}
     
-    .redes-sociais a:hover .fa-github {
-        color: #454545;
-    }
+.sobre-social a:hover .fa-linkedin {
+    color: #0e76a8;
+}
     
-    .redes-sociais a:hover .fa-linkedin {
-        color: #0e76a8;
-    }
     
-    #be:hover{
-        color: #0030cf;
-    }
-    
-    .redes-sociais a:hover .fa-instagram {
-        color: #e4405f;
-    }
+.sobre-social a:hover .fa-instagram {
+    color: #e4405f;
+}
+.sobre-social a:hover .fa-behance{
+    color: #0030cf;
+}
+
+
+.scroll{
+    margin-top: -130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+.scroll img{
+    width: 75px;
+}
+
+
+.sobre-content-habilidades{
+    padding-top: 50px;
+    margin: 30px;
+}
+
+.sobre-text-habilidades{
+    float: left;
+    width: 50%;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+.sobre-text-habilidades h1{
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+
+}
+.sobre-text-habilidades p{
+    text-align:justify;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
 
 
 /*Tamanho para tablets até o inicio de monitores*/
 
 @media (min-width: 700px) and (max-width: 1024px){
 
-    .Titulo{
+    .titulo{
         font-size:50px;
     }
     
-    .Titulo2{
+    .titulo2{
         font-size:25px;
         top: 57%;
     }
@@ -277,7 +424,7 @@ section .row:nth-child(even) div:nth-child(2){
 
 /*Tamanho para celulares até o inicio de tablets*/
 
-@media (min-width: 420px) and (max-width: 699px){
+@media (min-width: 400px) and (max-width: 699px){
 /*estilização menu*/
 
 .navbar{
@@ -391,7 +538,7 @@ nav .logo a{
 
 
 
-.Titulo{
+.titulo{
         font-size:30px;
         width: 90%;
         font-size: 4rem;
@@ -400,7 +547,7 @@ nav .logo a{
         text-align: center;
 }
 
-.Titulo2{
+.titulo2{
     font-size:30px;
     top: 65%;
     width: 90%;
