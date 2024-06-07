@@ -243,10 +243,11 @@ section .row:nth-child(even) div:nth-child(2){
 
 .sobre-content{
     margin: 30px;
-    height: 75vh;
+    height: 73vh;
 }
 
 .sobre-text{
+    padding-top: 40px;
     float: right;
     width: 50%;
     color: #fff;
@@ -259,16 +260,16 @@ section .row:nth-child(even) div:nth-child(2){
 }
 .sobre-text p{
     text-align:justify;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 300;
 }
 
 
 .sobre-img{
+    width: 22%;
     border-radius: 50%;
     margin-top: 30px;
     float: left;
-    width: 25%;
     margin-left:10%;
     box-shadow: 0 0 120px rgba(0, 255, 221, 0.527);
 }
@@ -321,6 +322,7 @@ section .row:nth-child(even) div:nth-child(2){
 
 .scroll{
     margin-top: -130px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -336,6 +338,7 @@ section .row:nth-child(even) div:nth-child(2){
     50%  { transform: translate(0, 15px); }
     100%   { transform: translate(0, -0px); }    
 }
+
 .scroll img{
     width: 75px;
 }
@@ -359,11 +362,38 @@ section .row:nth-child(even) div:nth-child(2){
 }
 .sobre-text-habilidades p{
     text-align:justify;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 300;
 }
 
+.tecnologias{
+    text-align: center;
+}
 
+.tecnologias i{
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-left: 40px;
+    color: #fff;
+    font-size: 70px;
+    gap: 5rem;
+}
+
+.group1{
+    animation: fadeInAnimation ease 2s;
+    
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+     }
+}
 /*Tamanho para tablets até o inicio de monitores*/
 
 @media (min-width: 700px) and (max-width: 1024px){
@@ -374,7 +404,7 @@ section .row:nth-child(even) div:nth-child(2){
     
     .titulo2{
         font-size:25px;
-        top: 57%;
+        top: 60%;
     }
     .redes-social i{
         color: #e4405f;
@@ -382,7 +412,7 @@ section .row:nth-child(even) div:nth-child(2){
         .redes-sociais {
             z-index: 200;
             position: absolute;
-            top: 30%;
+            top: 35%;
             left:39%;
             margin-right: -50%;
             bottom: 1rem;
