@@ -414,6 +414,9 @@ section .row:nth-child(even) div:nth-child(2){
     color: #fff;
     font-weight: 300;
 }
+.skills i{
+    color:rgb(0, 255, 221);
+}
 /*Tamanho para tablets até o inicio de monitores*/
 
 @media (min-width: 700px) and (max-width: 1024px){
@@ -471,7 +474,29 @@ section .row:nth-child(even) div:nth-child(2){
         }
     }
 
+/* Sobre Resoponsivo*/
+.sobre-img{
+    display: none;
+}
+.sobre-text{
+    width: 100%;
+    font-size: 2rem;
+}
+.sobre-text-habilidades{
+    width: 100%;
+}
+.tecnologias{
 
+    float: none;
+}
+.tecnologias i{
+    font-size: 50px;
+    margin: none;
+    padding: none;
+}
+.soft-skills{
+    text-align: left;
+}
 /*Tamanho para celulares até o inicio de tablets*/
 
 @media (min-width: 400px) and (max-width: 699px){
