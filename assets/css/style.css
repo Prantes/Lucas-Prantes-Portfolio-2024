@@ -242,7 +242,7 @@ section .row:nth-child(even) div:nth-child(2){
 .sobre-content{
     margin-left: 30px;
     margin-right: 30px;
-    height: 72vh;
+    height: 73vh;
 }
 
 .sobre-text{
@@ -351,6 +351,9 @@ section .row:nth-child(even) div:nth-child(2){
     color: #fff;
     font-family: "Open Sans", sans-serif;
 }
+.sobre-text-habilidades span{
+    color:rgb(0, 255, 221);
+}
 .sobre-text-habilidades h1{
     font-size: 2.2rem;
     margin-bottom: 20px;
@@ -393,11 +396,6 @@ section .row:nth-child(even) div:nth-child(2){
      }
 }
 
-.soft-skills{
-    float: left;
-    text-align: left;
-}
-
 .soft-skills span{
     color:rgb(0, 255, 221);
     font-size: 1.7rem;
@@ -416,6 +414,15 @@ section .row:nth-child(even) div:nth-child(2){
 }
 .skills i{
     color:rgb(0, 255, 221);
+}
+
+.footer{
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+   padding-bottom: 20px;
+}
+.footer p{
+    color: #fff;
 }
 /*Tamanho para tablets até o inicio de monitores*/
 
@@ -472,9 +479,7 @@ section .row:nth-child(even) div:nth-child(2){
         .redes-sociais a:hover .fa-instagram {
             color: #e4405f;
         }
-    }
-
-/* Sobre Resoponsivo*/
+        /* Sobre Resoponsivo*/
 .sobre-img{
     display: none;
 }
@@ -482,12 +487,22 @@ section .row:nth-child(even) div:nth-child(2){
     width: 100%;
     font-size: 2rem;
 }
+
+.sobre-content{
+    margin-left: 30px;
+    margin-right: 30px;
+    height: auto;
+}
+
 .sobre-text-habilidades{
     width: 100%;
 }
 .tecnologias{
 
     float: none;
+}
+.scroll {
+    display: none;
 }
 .tecnologias i{
     font-size: 50px;
@@ -497,6 +512,19 @@ section .row:nth-child(even) div:nth-child(2){
 .soft-skills{
     text-align: left;
 }
+
+.soft-skills ul{
+}
+
+.sobre-content-habilidades{
+    margin: 30px;
+    padding: 0;
+}
+
+
+}
+
+
 /*Tamanho para celulares até o inicio de tablets*/
 
 @media (min-width: 400px) and (max-width: 699px){
@@ -527,6 +555,7 @@ nav .logo a{
     font-weight: bold;
     float: left;
 }
+
 .destaque {
     color:rgb(0, 255, 221);
 }
@@ -674,5 +703,51 @@ nav .logo a{
     .redes-sociais a:hover .fa-instagram {
         color: #e4405f;
     }
-}
+
+
+        /* Sobre Resoponsivo*/
+        .sobre-img{
+            display: none;
+        }
+        .sobre-text{
+            width: 100%;
+            font-size: 2rem;
+        }
+        
+        .sobre-content{
+            margin-left: 30px;
+            margin-right: 30px;
+            height: auto;
+        }
+        
+        .sobre-text-habilidades{
+            width: 100%;
+        }
+        .tecnologias{
+        
+            float: none;
+        }
+        .scroll {
+            display: none;
+        }
+        .tecnologias i{
+            font-size: 25px;
+            float: left;
+            text-align: center;
+        }
+        .soft-skills{
+            text-align: left;
+        }
+        
+        .soft-skills ul{
+        }
+        
+        .sobre-content-habilidades{
+            margin: 30px;
+            padding: 0;
+        }
+        
+        
+        }
+
 
