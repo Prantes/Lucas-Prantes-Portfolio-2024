@@ -419,13 +419,69 @@ section .row:nth-child(even) div:nth-child(2){
 .footer{
     text-align: center;
     font-family: "Open Sans", sans-serif;
-   padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 .footer p{
     color: #fff;
 }
-/*Tamanho para tablets até o inicio de monitores*/
 
+
+/*ESTILIZAÇÃO DA PÁGINA PROJETOS*/
+.container-projetos{
+    width: 100%;
+    background: #111111;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.titulo-projetos{
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    padding-top: 20px;
+}
+
+.titulo-projetos span{
+    color:rgb(0, 255, 221);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.titulo-projetos h1{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/*Card Projeto*/
+.card{
+    width: 300px;
+    height: 400px;
+    background-color: #454545;
+    border-radius: 7px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.titulo-card-projetos{
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.card span{
+    color:rgb(0, 255, 221);
+    font-weight: 300;
+    font-size: 1rem;
+
+}
+.card p{
+    text-align: left;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+
+/*Tamanho para tablets até o inicio de monitores*/
 @media (min-width: 700px) and (max-width: 1024px){
 
     .titulo{
@@ -526,7 +582,6 @@ section .row:nth-child(even) div:nth-child(2){
 
 
 /*Tamanho para celulares até o inicio de tablets*/
-
 @media (min-width: 400px) and (max-width: 699px){
 /*estilização menu*/
 
