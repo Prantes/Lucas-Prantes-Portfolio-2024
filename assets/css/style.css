@@ -3,9 +3,11 @@
 
 *{
     margin: 0;
-    padding: 0;
-    
+    padding: 0;   
 }
+
+html{scrollbar-color: rgb(0, 255, 221); }
+
 a,
 li {
     text-decoration: none;
@@ -13,10 +15,12 @@ li {
 }
 .navbar{
     z-index: 1000;
+    position: fixed;
+    width: 100%;
 }
 .navbar ul{
     list-style: none;
-    background-color: #11111165;
+    background-color: #11111183;
     padding: 0px;
     margin: 0px;
     overflow: hidden;
@@ -226,7 +230,7 @@ section .row:nth-child(even) div:nth-child(2){
 .titulo-sobre{
     font-family: "Open Sans", sans-serif;
     text-align: center;
-    padding-top: 20px;
+    margin-top: 70px;
 }
 .titulo-sobre span{
     color: rgb(0, 255, 221);
@@ -438,7 +442,7 @@ section .row:nth-child(even) div:nth-child(2){
 .titulo-projetos{
     text-align: center;
     font-family: "Open Sans", sans-serif;
-    padding-top: 20px;
+    padding-top: 70px;
 }
 
 .titulo-projetos span{
@@ -453,31 +457,101 @@ section .row:nth-child(even) div:nth-child(2){
 }
 
 /*Card Projeto*/
+
+.trio{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
 .card{
-    width: 300px;
-    height: 400px;
-    background-color: #454545;
-    border-radius: 7px;
+    height: auto;
+    width: 320px;
+    padding: 1rem;
+    background-color: #252525;
+    border-radius: 20px;
     font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 20px;
 }
 
 .titulo-card-projetos{
     color: #fff;
     text-align: left;
     font-weight: bold;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.4rem;
+    margin: 10px;
 }
 .card span{
     color:rgb(0, 255, 221);
     font-weight: 300;
     font-size: 1rem;
-
+    margin-left: 10px;
 }
 .card p{
-    text-align: left;
+    text-align: justify;
     font-size: 0.9rem;
     margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+    font-weight: 300;
+    height: 130px;
+}
+.icon-projetos{
+    text-align: left;
+    margin-left: 10px;
+}
+
+.icon-projetos i{
+    color:rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+#html:hover{
+    color: #fd5c11; 
+}
+#css3:hover{
+    color: #045dc4;
+}
+#js:hover{
+    color: #fbff13;
+}
+.link-projetos{
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    padding: 0.7rem;
+    background-color:rgb(0, 255, 221);
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    width: 290px;
+}
+.link-projetos a{
+    color: #000;
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.link-projetos:hover{
+    background-color:#919191;
+    color:rgb(0, 255, 221);
+    text-decoration: none;
 }
 
 
@@ -535,7 +609,7 @@ section .row:nth-child(even) div:nth-child(2){
         .redes-sociais a:hover .fa-instagram {
             color: #e4405f;
         }
-        /* Sobre Resoponsivo*/
+/* Sobre Resoponsivo*/
 .sobre-img{
     display: none;
 }
@@ -576,6 +650,124 @@ section .row:nth-child(even) div:nth-child(2){
     margin: 30px;
     padding: 0;
 }
+
+/*ESTILIZAÇÃO DA PÁGINA PROJETOS*/
+.container-projetos{
+    width: 100%;
+    background: #111111;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.titulo-projetos{
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    padding-top: 70px;
+}
+
+.titulo-projetos span{
+    color:rgb(0, 255, 221);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.titulo-projetos h1{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/*Card Projeto*/
+.container-projetos{
+    width: 100%;
+    height: 100%;
+    background: #111111;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.trio{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.card{
+    height: auto;
+    width: 240px;
+    padding: 1rem;
+    background-color: #252525;
+    border-radius: 20px;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+}
+
+
+.card img{
+    height: 50%;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 10px;
+}
+
+.titulo-card-projetos{
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.card span{
+    color:rgb(0, 255, 221);
+    font-weight: 300;
+    font-size: 0.7rem;
+    margin-left: 10px;
+}
+.card p{
+    font-size: 0.7rem;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+    font-weight: 300;
+    height: 100px;
+}
+.icon-projetos{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.icon-projetos i{
+    color:rgb(255, 255, 255);
+    font-size: 0.9rem;
+}
+#html:hover{
+    color: #fd5c11; 
+}
+#css3:hover{
+    color: #045dc4;
+}
+#js:hover{
+    color: #fbff13;
+}
+
+.link-projetos{
+width: 50%;
+font-size: 0.5rem;
+margin: auto;
+  
+}
+.footer{
+    font-size: 0.8rem;
+}
+
 
 
 }
@@ -677,6 +869,10 @@ nav .logo a{
 .show-menu nav .logo{
     display: none;
 }
+
+
+
+
 
 
 /*Transformação do hamburguer em X para sinalizar botão de fechamento*/
@@ -801,7 +997,101 @@ nav .logo a{
             margin: 30px;
             padding: 0;
         }
-        
+/*Card Projeto*/
+.container-projetos{
+    width: 100%;
+    height: 100%;
+    background: #111111;
+    display: flex;
+    overflow: hidden;
+}
+
+
+.trio{
+    display: grid;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.card{
+    height: auto;
+    width: 90%;
+    padding: 1rem;
+    background-color: #252525;
+    border-radius: 20px;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+
+.card img{
+    height: 50%;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 10px;
+}
+
+.titulo-card-projetos{
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+.card span{
+    color:rgb(0, 255, 221);
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.card p{
+    font-size: 1.1rem;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+    font-weight: 400;
+    height: 100px;
+    text-align: justify;
+}
+.icon-projetos{
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.icon-projetos i{
+    color:rgb(255, 255, 255);
+    font-size: 2rem;
+}
+#html:hover{
+    color: #fd5c11; 
+}
+#css3:hover{
+    color: #045dc4;
+}
+#js:hover{
+    color: #fbff13;
+}
+
+.link-projetos{
+width: 50%;
+font-size: 1rem;
+margin: auto;
+  
+}
+.footer{
+    font-size: 0.8rem;
+}
         
         }
 
