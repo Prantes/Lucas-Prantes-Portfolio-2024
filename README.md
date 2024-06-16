@@ -15,8 +15,8 @@ Projeto Inspirado em alguns portfólios e realizando junção de diversas tecnic
 
 # Caracteristicas
 <ul>
-<b><li>Design Responsivo: Totalmente adaptável a diferentes tamanhos de tela, garantindo uma experiência de usuário consistente em dispositivos móveis e desktops.</li>
-<b><li>Animações Interativas:</li>
+<b><li>Design Responsivo:</b> Totalmente adaptável a diferentes tamanhos de tela, garantindo uma experiência de usuário consistente em dispositivos móveis e desktops.</li>
+<li>Animações Interativas:</li>
 </ul>
 
 # Contato
