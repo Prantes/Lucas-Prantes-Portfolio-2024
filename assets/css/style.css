@@ -560,11 +560,11 @@ section .row:nth-child(even) div:nth-child(2){
 
 .container-contato{
     width: 100%;
-    height: 100vh;
     background: #111111;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+
 }
 
 .titulo-contato{
@@ -588,8 +588,8 @@ section .row:nth-child(even) div:nth-child(2){
     
 .content-contato{
     display: flex;
-    margin-top: 100px;
-    height: 100vh;
+    align-items: center;
+    height: auto;
 }
 
 .contato-info{
@@ -600,7 +600,6 @@ section .row:nth-child(even) div:nth-child(2){
     font-family: "Open Sans", sans-serif;
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 100px;
 }
 
 .contato-info h2{
@@ -633,6 +632,7 @@ section .row:nth-child(even) div:nth-child(2){
     color: #fff;
     width: 55%;
     margin-right: 50px;
+    margin-top: 100px;
 
 }
 .form-contact h2{
@@ -663,7 +663,12 @@ input,textarea {
     background-color:rgb(0, 255, 221);
 }
 
-
+#contato{
+    display: flex;
+    height: 260px;
+    margin: auto;
+    align-items: end;
+}
 /*TAMANHOS PARA TABLETS E MONITORES PEQUENOS*/
 @media (min-width: 700px) and (max-width: 1024px){
 
@@ -1293,6 +1298,7 @@ nav .logo a{
     margin:0;
 }
 .titulo-contato{
+    height: 100%;
     font-family: "Open Sans", sans-serif;
     color: #fff;
     font-size: 1.4rem;
