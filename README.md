@@ -1,6 +1,6 @@
 # Imagens do Projeto
 
-<img src="https://i.imgur.com/CPx269P.png" alt="teste em mokup " width="1300" height="550">
+<img src="https://i.ibb.co/n8N3Drvh/image.png" alt="image" border="0">
 
 # Lucas-Prantes-Portfolio-2024
 Portfólio de projetos 2024
