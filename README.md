@@ -3,8 +3,7 @@
 <img src="https://i.ibb.co/n8N3Drvh/image.png" alt="image" border="0">
 
 # Lucas-Prantes-Portfolio-2024
-Portfólio de projetos 2024
-Projeto Inspirado em alguns portfólios e realizando junção de diversas tecnicas mais toque pessoal para gerar um estilo e gosto próprio. Dentro dele poderá ser encontrato alguns dos meus projjetos, links de redes sociais para entrar em contato comigo, e uma aba que será dedicada á minha loja que está em andamento a NerdHouse.
+Portfólio de projetos 2024 Projeto Inspirado em alguns portfólios e realizando junção de diversas técnicas mais toque pessoal para gerar um estilo e gosto próprio. Dentro dele poderá ser encontrado alguns dos meus projetos, links de redes sociais para entrar em contato comigo, e uma aba que será dedicada á minha loja que está em andamento a NerdHouse.
 
 # Tecnologias Utilizadas
 <ul>
